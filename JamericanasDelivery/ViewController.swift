@@ -12,17 +12,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var subView: UIView!
     
     
-    @IBOutlet weak var placeSelected: UILabel!
     var resultsViewController: GMSAutocompleteResultsViewController!
   var searchController: UISearchController!
   var resultView: UITextView?
   
     var orderPlace : [String] = ["","","",""]
     
+    @IBAction func unwindToOne(_ sender: UIStoryboardSegue){}
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "orderSegue"{
             let VCOrder =  segue.destination as! OrderViewController
-            VCOrder.placeDetailText = placeSelected.text!
+           // VCOrder.placeDetailText = placeSelected.text!
             VCOrder.orderPlace = orderPlace
         }
     }
@@ -99,7 +100,7 @@ extension ViewController: GMSAutocompleteResultsViewControllerDelegate {
     //print("Place attributions: \(place.attributions)")
      // let placeSelected = place.name + place.formattedAddress)
       var placeName : String = String(place.name!)
-      placeSelected.text = (placeName + "\n \n" + String(place.formattedAddress!))
+     // placeSelected.text = (placeName + "\n \n" + String(place.formattedAddress!))
       orderPlace[0] = place.name!
       orderPlace[1] = place.formattedAddress!
       //TENTAR NOVAMENTE MAIS TARDE
