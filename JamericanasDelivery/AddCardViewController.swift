@@ -28,6 +28,9 @@ class AddCardViewController: UIViewController {
 ////            cardInsert.setValue(numberTextView, for: "number")
         }
     }
+    override func touchesBegan(_ touches: Set<UITouch> , with event: UIEvent?){
+        view.endEditing(true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
