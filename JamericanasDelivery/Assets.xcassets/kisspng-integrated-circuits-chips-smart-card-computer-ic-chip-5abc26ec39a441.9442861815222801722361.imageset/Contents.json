@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "pngegg.png",
+      "filename" : "kisspng-integrated-circuits-chips-smart-card-computer-ic-chip-5abc26ec39a441.9442861815222801722361.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -17,8 +17,5 @@
   "info" : {
     "author" : "xcode",
     "version" : 1
-  },
-  "properties" : {
-    "preserves-vector-representation" : true
   }
 }

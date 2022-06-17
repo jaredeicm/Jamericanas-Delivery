@@ -414,16 +414,16 @@
                                             <constraint firstAttribute="height" constant="41" id="Txq-KX-8pv"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Unknown" translatesAutoresizingMaskIntoConstraints="NO" id="Ftw-8X-Yy6">
-                                        <rect key="frame" x="8" y="8" width="40" height="55"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="kisspng-chip-pin-solutions-ltd-emv-payment-card-credit-c-chip-5adec4d8b6adb2.3731812615245488247483" translatesAutoresizingMaskIntoConstraints="NO" id="Ftw-8X-Yy6">
+                                        <rect key="frame" x="8" y="8" width="62" height="41"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="40" id="G7e-To-erb"/>
-                                            <constraint firstAttribute="height" constant="55" id="pao-xr-Wxw"/>
+                                            <constraint firstAttribute="height" constant="41" id="NXY-Wu-uTd"/>
+                                            <constraint firstAttribute="width" constant="62" id="RPr-pY-Bcc"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SrO-SZ-eXM">
-                                        <rect key="frame" x="15" y="77" width="291" height="20"/>
+                                        <rect key="frame" x="15" y="74" width="291" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="l4n-Ab-g8n"/>
                                         </constraints>
@@ -434,11 +434,11 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
-                                    <constraint firstItem="Ftw-8X-Yy6" firstAttribute="leading" secondItem="KlY-jQ-E0u" secondAttribute="leading" constant="8" id="5fs-J8-s1O"/>
-                                    <constraint firstItem="Ftw-8X-Yy6" firstAttribute="top" secondItem="KlY-jQ-E0u" secondAttribute="top" constant="8" id="Kuc-fa-0LI"/>
+                                    <constraint firstItem="Ftw-8X-Yy6" firstAttribute="leading" secondItem="KlY-jQ-E0u" secondAttribute="leading" constant="8" id="QlZ-mA-hrK"/>
+                                    <constraint firstItem="Ftw-8X-Yy6" firstAttribute="top" secondItem="KlY-jQ-E0u" secondAttribute="top" constant="8" id="Z7x-GH-yvs"/>
                                     <constraint firstAttribute="height" constant="175" id="bLL-lF-IsK"/>
                                     <constraint firstAttribute="trailing" secondItem="SrO-SZ-eXM" secondAttribute="trailing" constant="15" id="c3u-bD-jHW"/>
-                                    <constraint firstItem="SrO-SZ-eXM" firstAttribute="top" secondItem="Ftw-8X-Yy6" secondAttribute="bottom" constant="14" id="doP-fT-xWK"/>
+                                    <constraint firstItem="SrO-SZ-eXM" firstAttribute="top" secondItem="Ftw-8X-Yy6" secondAttribute="bottom" constant="25" id="doP-fT-xWK"/>
                                     <constraint firstItem="vfM-EX-DiB" firstAttribute="top" secondItem="KlY-jQ-E0u" secondAttribute="top" constant="8" id="gBJ-eW-vGs"/>
                                     <constraint firstAttribute="trailing" secondItem="vfM-EX-DiB" secondAttribute="trailing" constant="19" id="mh5-c9-7HW"/>
                                     <constraint firstItem="SrO-SZ-eXM" firstAttribute="leading" secondItem="KlY-jQ-E0u" secondAttribute="leading" constant="15" id="pVG-nd-svP"/>
@@ -528,7 +528,7 @@
                                 <rect key="frame" x="27" y="105" width="321" height="175"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MmF-0D-fif">
-                                        <rect key="frame" x="20" y="77" width="281" height="20"/>
+                                        <rect key="frame" x="20" y="70" width="281" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="TmJ-24-rW2"/>
                                         </constraints>
@@ -536,16 +536,8 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Unknown" translatesAutoresizingMaskIntoConstraints="NO" id="2ZA-aM-Oks">
-                                        <rect key="frame" x="19" y="8" width="40" height="55"/>
-                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="55" id="Xyd-WU-gcN"/>
-                                            <constraint firstAttribute="width" constant="40" id="yJr-gs-gDX"/>
-                                        </constraints>
-                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZU-vI-DKJ">
-                                        <rect key="frame" x="20" y="103" width="281" height="20"/>
+                                        <rect key="frame" x="20" y="96" width="281" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="UU7-HD-zkQ"/>
                                         </constraints>
@@ -554,25 +546,33 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="masterCardLogo" translatesAutoresizingMaskIntoConstraints="NO" id="QSL-Dw-YoI">
-                                        <rect key="frame" x="234" y="15" width="56" height="41"/>
+                                        <rect key="frame" x="234" y="8" width="56" height="41"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="41" id="VZG-Fv-NG3"/>
                                             <constraint firstAttribute="width" constant="56" id="eJK-GS-5v2"/>
                                         </constraints>
                                     </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="kisspng-chip-pin-solutions-ltd-emv-payment-card-credit-c-chip-5adec4d8b6adb2.3731812615245488247483" translatesAutoresizingMaskIntoConstraints="NO" id="5Uc-fm-Gbb">
+                                        <rect key="frame" x="8" y="8" width="62" height="41"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="62" id="KxQ-oF-mzq"/>
+                                            <constraint firstAttribute="height" constant="41" id="umc-Pa-vAA"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
-                                    <constraint firstItem="MmF-0D-fif" firstAttribute="top" secondItem="2ZA-aM-Oks" secondAttribute="bottom" constant="14" id="240-qy-3la"/>
                                     <constraint firstItem="FZU-vI-DKJ" firstAttribute="top" secondItem="MmF-0D-fif" secondAttribute="bottom" constant="6" id="40e-MV-q6M"/>
-                                    <constraint firstItem="2ZA-aM-Oks" firstAttribute="top" secondItem="M2C-Sk-uX4" secondAttribute="top" constant="8" id="4Sh-fv-CPg"/>
+                                    <constraint firstItem="5Uc-fm-Gbb" firstAttribute="leading" secondItem="M2C-Sk-uX4" secondAttribute="leading" constant="8" id="8sJ-Mz-Ffi"/>
                                     <constraint firstItem="MmF-0D-fif" firstAttribute="leading" secondItem="M2C-Sk-uX4" secondAttribute="leading" constant="20" id="Ble-bU-wSf"/>
+                                    <constraint firstItem="5Uc-fm-Gbb" firstAttribute="top" secondItem="M2C-Sk-uX4" secondAttribute="top" constant="8" id="HBa-PN-Krc"/>
                                     <constraint firstAttribute="trailing" secondItem="FZU-vI-DKJ" secondAttribute="trailing" constant="20" id="Ny7-b8-Cf5"/>
+                                    <constraint firstItem="QSL-Dw-YoI" firstAttribute="top" secondItem="M2C-Sk-uX4" secondAttribute="top" constant="8" id="UUd-eH-DbM"/>
                                     <constraint firstAttribute="trailing" secondItem="QSL-Dw-YoI" secondAttribute="trailing" constant="31" id="cSJ-aH-UaN"/>
                                     <constraint firstItem="MmF-0D-fif" firstAttribute="top" secondItem="QSL-Dw-YoI" secondAttribute="bottom" constant="21" id="gKJ-RN-1mb"/>
                                     <constraint firstAttribute="height" constant="175" id="imF-gp-Qfe"/>
-                                    <constraint firstItem="2ZA-aM-Oks" firstAttribute="leading" secondItem="M2C-Sk-uX4" secondAttribute="leading" constant="19" id="nu2-Qd-gAi"/>
                                     <constraint firstItem="FZU-vI-DKJ" firstAttribute="leading" secondItem="M2C-Sk-uX4" secondAttribute="leading" constant="20" id="qVt-Ou-al6"/>
                                     <constraint firstAttribute="trailing" secondItem="MmF-0D-fif" secondAttribute="trailing" constant="20" id="wQ4-de-Esk"/>
                                 </constraints>
@@ -654,7 +654,7 @@
                                 <rect key="frame" x="27" y="105" width="321" height="180"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wsd-zC-3uJ">
-                                        <rect key="frame" x="20" y="77" width="281" height="20"/>
+                                        <rect key="frame" x="20" y="70" width="281" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="49X-6L-eBI"/>
                                         </constraints>
@@ -662,16 +662,8 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Unknown" translatesAutoresizingMaskIntoConstraints="NO" id="7Xd-EG-2m3">
-                                        <rect key="frame" x="19" y="8" width="40" height="55"/>
-                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="40" id="TNU-4s-Hmt"/>
-                                            <constraint firstAttribute="height" constant="55" id="xEu-4I-Sgy"/>
-                                        </constraints>
-                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M10-Zj-1yP">
-                                        <rect key="frame" x="21" y="135" width="280" height="21"/>
+                                        <rect key="frame" x="21" y="128" width="280" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="Y3u-6p-FRT"/>
                                         </constraints>
@@ -680,7 +672,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8L-56-PZS">
-                                        <rect key="frame" x="20" y="106" width="281" height="20"/>
+                                        <rect key="frame" x="20" y="99" width="281" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="0uR-Ki-iMt"/>
                                         </constraints>
@@ -688,31 +680,41 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="kisspng-chip-pin-solutions-ltd-emv-payment-card-credit-c-chip-5adec4d8b6adb2.3731812615245488247483" translatesAutoresizingMaskIntoConstraints="NO" id="Juj-lW-pdq">
+                                        <rect key="frame" x="8" y="8" width="62" height="41"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="41" id="RTd-ZZ-rWN"/>
+                                            <constraint firstAttribute="width" constant="62" id="b8P-94-kLJ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="masterCardLogo" translatesAutoresizingMaskIntoConstraints="NO" id="4vk-Ag-XQu">
+                                        <rect key="frame" x="235" y="8" width="56" height="41"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="41" id="B9L-WD-vKW"/>
+                                            <constraint firstAttribute="width" constant="56" id="Ted-Eg-Tno"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="Wsd-zC-3uJ" secondAttribute="trailing" constant="20" id="0zC-iO-jqR"/>
+                                    <constraint firstAttribute="trailing" secondItem="4vk-Ag-XQu" secondAttribute="trailing" constant="30" id="1T3-nw-DMU"/>
                                     <constraint firstAttribute="trailing" secondItem="o8L-56-PZS" secondAttribute="trailing" constant="20" id="2rm-8X-AbL"/>
                                     <constraint firstItem="M10-Zj-1yP" firstAttribute="leading" secondItem="p3f-yC-Znj" secondAttribute="leading" constant="21" id="4GW-4s-9ds"/>
-                                    <constraint firstItem="7Xd-EG-2m3" firstAttribute="top" secondItem="p3f-yC-Znj" secondAttribute="top" constant="8" id="6pN-py-h32"/>
+                                    <constraint firstItem="Juj-lW-pdq" firstAttribute="top" secondItem="p3f-yC-Znj" secondAttribute="top" constant="8" id="7b3-Qo-U6x"/>
+                                    <constraint firstItem="Juj-lW-pdq" firstAttribute="leading" secondItem="p3f-yC-Znj" secondAttribute="leading" constant="8" id="Am8-rW-MOd"/>
                                     <constraint firstAttribute="trailing" secondItem="M10-Zj-1yP" secondAttribute="trailing" constant="20" id="BYJ-JX-NdG"/>
                                     <constraint firstAttribute="height" constant="180" id="I4F-jy-qZJ"/>
                                     <constraint firstItem="M10-Zj-1yP" firstAttribute="top" secondItem="o8L-56-PZS" secondAttribute="bottom" constant="9" id="K3a-hY-vcT"/>
                                     <constraint firstItem="o8L-56-PZS" firstAttribute="top" secondItem="Wsd-zC-3uJ" secondAttribute="bottom" constant="9" id="KRc-Im-2dw"/>
-                                    <constraint firstItem="7Xd-EG-2m3" firstAttribute="leading" secondItem="p3f-yC-Znj" secondAttribute="leading" constant="19" id="S3E-yD-jxg"/>
+                                    <constraint firstItem="Wsd-zC-3uJ" firstAttribute="top" secondItem="4vk-Ag-XQu" secondAttribute="bottom" constant="21" id="Vso-7O-J4O"/>
                                     <constraint firstItem="Wsd-zC-3uJ" firstAttribute="leading" secondItem="p3f-yC-Znj" secondAttribute="leading" constant="20" id="bpQ-kT-GmC"/>
+                                    <constraint firstItem="4vk-Ag-XQu" firstAttribute="top" secondItem="p3f-yC-Znj" secondAttribute="top" constant="8" id="gZc-J4-qdS"/>
                                     <constraint firstItem="o8L-56-PZS" firstAttribute="leading" secondItem="p3f-yC-Znj" secondAttribute="leading" constant="20" id="kBH-tH-Apz"/>
-                                    <constraint firstItem="Wsd-zC-3uJ" firstAttribute="top" secondItem="7Xd-EG-2m3" secondAttribute="bottom" constant="14" id="tK3-M5-8lz"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="masterCardLogo" translatesAutoresizingMaskIntoConstraints="NO" id="03K-m0-Qv6">
-                                <rect key="frame" x="275" y="115" width="56" height="41"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="41" id="9mI-h3-bHy"/>
-                                    <constraint firstAttribute="width" constant="56" id="Ky9-bF-bsO"/>
-                                </constraints>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mu6-Uk-Gmx">
                                 <rect key="frame" x="0.0" y="345" width="375" height="190"/>
                                 <subviews>
@@ -761,8 +763,6 @@
                             <constraint firstItem="K6X-kv-nk2" firstAttribute="trailing" secondItem="p3f-yC-Znj" secondAttribute="trailing" constant="27" id="DqM-zd-aUq"/>
                             <constraint firstItem="Mu6-Uk-Gmx" firstAttribute="leading" secondItem="Ear-qU-f0j" secondAttribute="leading" id="GDN-qV-fMO"/>
                             <constraint firstItem="p3f-yC-Znj" firstAttribute="leading" secondItem="K6X-kv-nk2" secondAttribute="leading" constant="27" id="cfr-tf-KWW"/>
-                            <constraint firstItem="03K-m0-Qv6" firstAttribute="top" secondItem="Ear-qU-f0j" secondAttribute="top" constant="115" id="cvM-hj-tLZ"/>
-                            <constraint firstItem="K6X-kv-nk2" firstAttribute="trailing" secondItem="03K-m0-Qv6" secondAttribute="trailing" constant="44" id="qge-aI-fgS"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="N2K-3x-Fhc">
@@ -906,7 +906,7 @@
                                 <rect key="frame" x="27" y="105" width="321" height="175"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aik-vd-FXx">
-                                        <rect key="frame" x="20" y="77" width="281" height="20"/>
+                                        <rect key="frame" x="20" y="72" width="281" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="Q2J-ok-9HX"/>
                                         </constraints>
@@ -914,14 +914,6 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Unknown" translatesAutoresizingMaskIntoConstraints="NO" id="1dF-sZ-Uhq">
-                                        <rect key="frame" x="19" y="8" width="40" height="55"/>
-                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="40" id="Xny-eA-D2L"/>
-                                            <constraint firstAttribute="height" constant="55" id="mK4-x7-Gg7"/>
-                                        </constraints>
-                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zs7-Ul-yfu">
                                         <rect key="frame" x="21" y="135" width="129" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -937,22 +929,29 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="masterCardLogo" translatesAutoresizingMaskIntoConstraints="NO" id="vBA-Xd-aJt">
-                                        <rect key="frame" x="257" y="15" width="56" height="41"/>
+                                        <rect key="frame" x="257" y="10" width="56" height="41"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="41" id="HEX-oI-4VM"/>
                                             <constraint firstAttribute="width" constant="56" id="JeI-4S-Bfh"/>
                                         </constraints>
                                     </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="kisspng-chip-pin-solutions-ltd-emv-payment-card-credit-c-chip-5adec4d8b6adb2.3731812615245488247483" translatesAutoresizingMaskIntoConstraints="NO" id="fPC-DJ-Lu6">
+                                        <rect key="frame" x="8" y="8" width="62" height="41"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="41" id="3Rm-jr-EzO"/>
+                                            <constraint firstAttribute="width" constant="62" id="dgM-ux-9ge"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
-                                    <constraint firstItem="vBA-Xd-aJt" firstAttribute="top" secondItem="N05-V1-FoP" secondAttribute="top" constant="15" id="LPX-b6-Dfx"/>
+                                    <constraint firstItem="fPC-DJ-Lu6" firstAttribute="top" secondItem="N05-V1-FoP" secondAttribute="top" constant="8" id="1bq-H3-bmY"/>
+                                    <constraint firstItem="vBA-Xd-aJt" firstAttribute="top" secondItem="N05-V1-FoP" secondAttribute="top" constant="10" id="LPX-b6-Dfx"/>
                                     <constraint firstItem="Aik-vd-FXx" firstAttribute="top" secondItem="vBA-Xd-aJt" secondAttribute="bottom" constant="21" id="Nem-VQ-8zX"/>
-                                    <constraint firstItem="1dF-sZ-Uhq" firstAttribute="top" secondItem="N05-V1-FoP" secondAttribute="top" constant="8" id="Nze-Jz-bjo"/>
-                                    <constraint firstItem="1dF-sZ-Uhq" firstAttribute="leading" secondItem="N05-V1-FoP" secondAttribute="leading" constant="19" id="Wl9-Hp-guu"/>
-                                    <constraint firstItem="Aik-vd-FXx" firstAttribute="top" secondItem="1dF-sZ-Uhq" secondAttribute="bottom" constant="14" id="bmd-ap-T42"/>
                                     <constraint firstAttribute="height" constant="175" id="mdP-bX-L0S"/>
+                                    <constraint firstItem="fPC-DJ-Lu6" firstAttribute="leading" secondItem="N05-V1-FoP" secondAttribute="leading" constant="8" id="upX-Ss-OWn"/>
                                     <constraint firstAttribute="trailing" secondItem="Aik-vd-FXx" secondAttribute="trailing" constant="20" id="wK7-N9-1oc"/>
                                     <constraint firstAttribute="trailing" secondItem="vBA-Xd-aJt" secondAttribute="trailing" constant="8" id="xwd-bn-URp"/>
                                     <constraint firstItem="Aik-vd-FXx" firstAttribute="leading" secondItem="N05-V1-FoP" secondAttribute="leading" constant="20" id="zx7-XR-86c"/>
@@ -1188,6 +1187,7 @@
                         <outlet property="orderLabel" destination="3KI-5g-dua" id="9Ah-t8-giJ"/>
                         <outlet property="orderPrice" destination="BFm-xO-PdN" id="E0j-am-xIw"/>
                         <outlet property="orderTextView" destination="dkg-JQ-eMq" id="zoW-iC-rmS"/>
+                        <outlet property="paymentView" destination="dkh-jU-Oq4" id="nms-EG-Oux"/>
                         <outlet property="placeAddress" destination="4ee-rH-QgX" id="iLR-DH-UZl"/>
                         <outlet property="placeName" destination="xlD-Bw-EST" id="u1a-mO-dQV"/>
                     </connections>
@@ -1443,8 +1443,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Unknown" width="227" height="222"/>
-        <image name="masterCardLogo" width="296" height="170"/>
+        <image name="kisspng-chip-pin-solutions-ltd-emv-payment-card-credit-c-chip-5adec4d8b6adb2.3731812615245488247483" width="900" height="900"/>
+        <image name="masterCardLogo" width="600" height="600"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

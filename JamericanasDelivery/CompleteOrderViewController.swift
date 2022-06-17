@@ -13,6 +13,7 @@ class CompleteOrderViewController: UIViewController {
     @IBOutlet weak var cardLabel: UILabel!
     @IBOutlet weak var orderTextView: UIView!
     
+    @IBOutlet weak var paymentView: UIView!
     @IBOutlet weak var placeName: UILabel!
     @IBOutlet weak var placeAddress: UILabel!
     @IBOutlet weak var orderPrice: UILabel!
@@ -43,7 +44,11 @@ class CompleteOrderViewController: UIViewController {
         orderTextView.layer.shadowOpacity = 0.4;
         orderTextView.layer.shadowRadius = 5.0;
         
-        //orderDetail.text = orderDetailText
+        paymentView.layer.cornerRadius = 5.0;
+        paymentView.layer.borderWidth = 0.5;
+        paymentView.layer.shadowOpacity = 0.4;
+        paymentView.layer.shadowRadius = 3.0;
+        
         cardLabel.text = cardSelected
         
         placeName.text = orderPlace[0]

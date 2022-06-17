@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "pngegg.png",
+      "filename" : "kisspng-chip-pin-solutions-ltd-emv-payment-card-credit-c-chip-5adec4d8b6adb2.3731812615245488247483.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -17,8 +17,5 @@
   "info" : {
     "author" : "xcode",
     "version" : 1
-  },
-  "properties" : {
-    "preserves-vector-representation" : true
   }
 }
