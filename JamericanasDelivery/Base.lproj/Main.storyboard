@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TZ6-HJ-UpK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="B1N-3q-mrC">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -407,13 +407,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KlY-jQ-E0u">
                                 <rect key="frame" x="27" y="105" width="321" height="175"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="masterCardLogo" translatesAutoresizingMaskIntoConstraints="NO" id="vfM-EX-DiB">
-                                        <rect key="frame" x="246" y="8" width="56" height="41"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="56" id="SPx-YP-UfC"/>
-                                            <constraint firstAttribute="height" constant="41" id="Txq-KX-8pv"/>
-                                        </constraints>
-                                    </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="kisspng-chip-pin-solutions-ltd-emv-payment-card-credit-c-chip-5adec4d8b6adb2.3731812615245488247483" translatesAutoresizingMaskIntoConstraints="NO" id="Ftw-8X-Yy6">
                                         <rect key="frame" x="8" y="8" width="62" height="41"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
@@ -431,6 +424,13 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="sad_cloud_dark.png" translatesAutoresizingMaskIntoConstraints="NO" id="vfM-EX-DiB">
+                                        <rect key="frame" x="250" y="8" width="56" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="56" id="SPx-YP-UfC"/>
+                                            <constraint firstAttribute="height" constant="41" id="Txq-KX-8pv"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
@@ -445,18 +445,13 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Número no cartão" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FTu-pn-4AN">
-                                <rect key="frame" x="16" y="340" width="343" height="21"/>
+                                <rect key="frame" x="16" y="340" width="343" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0000 0000 0000 0000" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8oS-ww-Mhh">
-                                <rect key="frame" x="16" y="376" width="343" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" textContentType="cc-number"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9GD-4i-E6z">
-                                <rect key="frame" x="261.33333333333331" y="430" width="75.666666666666686" height="31"/>
+                                <rect key="frame" x="261.33333333333331" y="446.33333333333331" width="75.666666666666686" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Próxima">
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -466,19 +461,32 @@
                                     <segue destination="q5E-dP-h0B" kind="show" identifier="segueNameCard" id="HXf-Ag-mOI"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="165" translatesAutoresizingMaskIntoConstraints="NO" id="J5a-Io-mHQ">
+                                <rect key="frame" x="8" y="380.33333333333331" width="359" height="50"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0000 0000 0000 0000" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8oS-ww-Mhh">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="xZ0-vT-nqc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" textContentType="cc-number"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fP0-xj-RLB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="fP0-xj-RLB" firstAttribute="trailing" secondItem="FTu-pn-4AN" secondAttribute="trailing" constant="16" id="1Nd-Gz-UmR"/>
                             <constraint firstItem="FTu-pn-4AN" firstAttribute="leading" secondItem="fP0-xj-RLB" secondAttribute="leading" constant="16" id="1dD-jk-yw9"/>
-                            <constraint firstItem="8oS-ww-Mhh" firstAttribute="leading" secondItem="fP0-xj-RLB" secondAttribute="leading" constant="16" id="27Q-6h-hb7"/>
                             <constraint firstItem="KlY-jQ-E0u" firstAttribute="leading" secondItem="fP0-xj-RLB" secondAttribute="leading" constant="27" id="4OK-Q6-qtd"/>
-                            <constraint firstItem="8oS-ww-Mhh" firstAttribute="top" secondItem="FTu-pn-4AN" secondAttribute="bottom" constant="15" id="C6w-cG-xqC"/>
+                            <constraint firstItem="9GD-4i-E6z" firstAttribute="top" secondItem="J5a-Io-mHQ" secondAttribute="bottom" constant="16" id="JqO-GG-m44"/>
+                            <constraint firstItem="fP0-xj-RLB" firstAttribute="trailing" secondItem="J5a-Io-mHQ" secondAttribute="trailing" constant="8" id="RNe-W1-I0W"/>
                             <constraint firstItem="FTu-pn-4AN" firstAttribute="top" secondItem="KlY-jQ-E0u" secondAttribute="bottom" constant="60" id="dBo-Qd-fb7"/>
-                            <constraint firstItem="fP0-xj-RLB" firstAttribute="trailing" secondItem="8oS-ww-Mhh" secondAttribute="trailing" constant="16" id="gAG-Mx-Xjd"/>
+                            <constraint firstItem="J5a-Io-mHQ" firstAttribute="top" secondItem="FTu-pn-4AN" secondAttribute="bottom" constant="20" id="jd8-7M-nKx"/>
                             <constraint firstItem="fP0-xj-RLB" firstAttribute="trailing" secondItem="KlY-jQ-E0u" secondAttribute="trailing" constant="27" id="kGZ-6u-YIR"/>
-                            <constraint firstItem="9GD-4i-E6z" firstAttribute="top" secondItem="8oS-ww-Mhh" secondAttribute="bottom" constant="20" id="ogO-7B-aoD"/>
+                            <constraint firstItem="J5a-Io-mHQ" firstAttribute="leading" secondItem="fP0-xj-RLB" secondAttribute="leading" constant="8" id="ldl-Lm-bJS"/>
                             <constraint firstItem="KlY-jQ-E0u" firstAttribute="top" secondItem="fP0-xj-RLB" secondAttribute="top" constant="17" id="yjr-6V-F3a"/>
                             <constraint firstItem="fP0-xj-RLB" firstAttribute="trailing" secondItem="9GD-4i-E6z" secondAttribute="trailing" constant="38" id="zgE-LP-XaD"/>
                         </constraints>
@@ -488,6 +496,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="cardView" destination="KlY-jQ-E0u" id="2h5-FQ-fjN"/>
+                        <outlet property="logoCard" destination="vfM-EX-DiB" id="Brv-3K-dzq"/>
                         <outlet property="nameLabel" destination="KlY-jQ-E0u" id="ryB-r5-MJx"/>
                         <outlet property="numberButton" destination="9GD-4i-E6z" id="DUe-6K-RMT"/>
                         <outlet property="numberField" destination="SrO-SZ-eXM" id="FrS-cq-q1r"/>
@@ -545,7 +554,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="masterCardLogo" translatesAutoresizingMaskIntoConstraints="NO" id="QSL-Dw-YoI">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sad_cloud_dark.png" translatesAutoresizingMaskIntoConstraints="NO" id="QSL-Dw-YoI">
                                         <rect key="frame" x="234" y="8" width="56" height="41"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <constraints>
@@ -632,6 +641,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="cardView" destination="M2C-Sk-uX4" id="Bse-tb-eYq"/>
+                        <outlet property="logoCard" destination="QSL-Dw-YoI" id="H4r-xh-aJr"/>
                         <outlet property="nameButton" destination="MmV-tA-2pD" id="bTB-3D-1yh"/>
                         <outlet property="nameField" destination="qD0-a0-dmG" id="g0P-zi-Vqn"/>
                         <outlet property="nameLabel" destination="FZU-vI-DKJ" id="PIp-TP-c39"/>
@@ -688,7 +698,7 @@
                                             <constraint firstAttribute="width" constant="62" id="b8P-94-kLJ"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="masterCardLogo" translatesAutoresizingMaskIntoConstraints="NO" id="4vk-Ag-XQu">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sad_cloud_dark.png" translatesAutoresizingMaskIntoConstraints="NO" id="4vk-Ag-XQu">
                                         <rect key="frame" x="235" y="8" width="56" height="41"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <constraints>
@@ -773,6 +783,7 @@
                         <outlet property="expirationButton" destination="OJu-8Z-icO" id="nuG-yX-37c"/>
                         <outlet property="expirationField" destination="eE9-xa-P2c" id="dhh-gy-bW5"/>
                         <outlet property="expirationLabel" destination="M10-Zj-1yP" id="0Nr-VO-kZp"/>
+                        <outlet property="logoCard" destination="4vk-Ag-XQu" id="3JV-7v-MQL"/>
                         <outlet property="nameLabel" destination="o8L-56-PZS" id="AUQ-rJ-eZO"/>
                         <outlet property="numberLabel" destination="Wsd-zC-3uJ" id="vjW-oa-X2y"/>
                     </connections>
@@ -928,7 +939,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="masterCardLogo" translatesAutoresizingMaskIntoConstraints="NO" id="vBA-Xd-aJt">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sad_cloud_dark.png" translatesAutoresizingMaskIntoConstraints="NO" id="vBA-Xd-aJt">
                                         <rect key="frame" x="257" y="10" width="56" height="41"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <constraints>
@@ -1012,6 +1023,7 @@
                         <outlet property="cardView" destination="N05-V1-FoP" id="4gA-U9-2AR"/>
                         <outlet property="cpfField" destination="JhH-hb-vU9" id="ZaC-xR-j9r"/>
                         <outlet property="expirationLabel" destination="Zs7-Ul-yfu" id="T3X-Yl-63v"/>
+                        <outlet property="logoCard" destination="vBA-Xd-aJt" id="fFy-qX-Aab"/>
                         <outlet property="nameLabel" destination="spS-XA-ZuY" id="T76-fb-ofk"/>
                         <outlet property="numberLabel" destination="Aik-vd-FXx" id="43H-NT-xYO"/>
                         <outlet property="saveButton" destination="OgU-Xp-A0B" id="vWY-Aj-8x8"/>
@@ -1444,7 +1456,7 @@
     </scenes>
     <resources>
         <image name="kisspng-chip-pin-solutions-ltd-emv-payment-card-credit-c-chip-5adec4d8b6adb2.3731812615245488247483" width="900" height="900"/>
-        <image name="masterCardLogo" width="600" height="600"/>
+        <image name="sad_cloud_dark.png" width="144" height="96"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

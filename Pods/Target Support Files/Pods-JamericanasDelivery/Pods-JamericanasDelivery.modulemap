@@ -1,0 +1,6 @@
+module Pods_JamericanasDelivery {
+  umbrella header "Pods-JamericanasDelivery-umbrella.h"
+
+  export *
+  module * { export * }
+}

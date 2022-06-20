@@ -18,6 +18,9 @@ class CpfViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var numberLabel: UILabel!
     @IBOutlet weak var expirationLabel: UILabel!
+    @IBOutlet weak var logoCard: UIImageView!
+    var logoOrigin: UIImage!
+
     
     @IBAction func returnView(_ sender: Any) {
         infoCard[4] = cpfField.text!
@@ -56,10 +59,7 @@ class CpfViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-
-        
+        logoCard.image = logoOrigin
         saveButton.isEnabled = false
         cardView.layer.cornerRadius = 7.0
 

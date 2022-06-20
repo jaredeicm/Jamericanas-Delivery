@@ -7,6 +7,7 @@ platform :ios, '13.0'
 target 'JamericanasDelivery' do
   
 pod 'GooglePlaces', '6.0.0'
+pod 'ATGValidator', '~> 1.0'
 
   # Pods for JamericanasDelivery
 

@@ -16,7 +16,8 @@ class NameCardViewController: UIViewController {
     @IBOutlet weak var numberLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var nameField: UITextField!
-    
+    @IBOutlet weak var logoCard: UIImageView!
+    var logoOrigin: UIImage!
     //@IBOutlet weak var nameView: UIView!
     
     var numberValue: String = ""
@@ -27,6 +28,7 @@ class NameCardViewController: UIViewController {
         let VCexpiration = segue.destination as! ExpirationCardViewController
             VCexpiration.inforCard = infoCard
             VCexpiration.inforCard[1] = nameField.text!
+            VCexpiration.logoOrigin = logoCard.image
         }
     }
     
@@ -36,9 +38,9 @@ class NameCardViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        logoCard.image = logoOrigin
         //var requestName = CoreDataClass()
         //requestName.getNumber()
-        
         nameButton.isEnabled = false
         cardView.layer.cornerRadius = 7.0
         numberLabel.text = numberValue

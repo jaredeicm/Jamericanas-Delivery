@@ -14,12 +14,15 @@ class CVVViewController: UIViewController {
     @IBOutlet weak var cvvView: UIView!
     @IBOutlet weak var cvvButton: UIButton!
     @IBOutlet weak var cvvField: UITextField!
+    var logoOrigin: UIImage!
+
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueCpf"{
             let VCCpf = segue.destination as! CpfViewController
             VCCpf.infoCard = infoCard
             VCCpf.infoCard[3] = cvvLabel.text!
+            VCCpf.logoOrigin = logoOrigin
         }
     }
     

@@ -15,6 +15,9 @@ class ExpirationCardViewController: UIViewController {
     @IBOutlet weak var expirationButton: UIButton!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var expirationLabel: UILabel!
+    @IBOutlet weak var logoCard: UIImageView!
+    var logoOrigin: UIImage!
+    
     var inforCard:[String] = ["","","","",""]
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -22,6 +25,7 @@ class ExpirationCardViewController: UIViewController {
             let CVV = segue.destination as! CVVViewController
             CVV.infoCard = inforCard
             CVV.infoCard[2] = expirationField.text!
+            CVV.logoOrigin = logoCard.image
         }
     }
     
@@ -32,7 +36,7 @@ class ExpirationCardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        logoCard.image = logoOrigin
         expirationButton.isEnabled = false
         cardView.layer.cornerRadius = 7.0
         numberLabel.text = inforCard[0]

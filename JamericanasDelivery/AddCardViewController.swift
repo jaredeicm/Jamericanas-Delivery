@@ -6,7 +6,8 @@
 //
 
 import UIKit
-//import CoreData
+import ATGValidator
+
 class AddCardViewController: UIViewController {
 
     
@@ -16,12 +17,15 @@ class AddCardViewController: UIViewController {
     @IBOutlet weak var numberField: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var numberButton: UIButton!
+    @IBOutlet weak var logoCard: UIImageView!
+//    @IBOutlet weak var statusCardLabel: UILabel!
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueNameCard" {
             let VCname = segue.destination as! NameCardViewController
             VCname.numberValue = numberTextView.text!
+            VCname.logoOrigin = logoCard.image
         }
     }
     override func touchesBegan(_ touches: Set<UITouch> , with event: UIEvent?){
@@ -34,11 +38,28 @@ class AddCardViewController: UIViewController {
         numberButton.isEnabled = false
         cardView.layer.cornerRadius = 7.0
         
+        numberTextView.validationRules = [PaymentCardRule(acceptedTypes:[.visa , .mastercard])]
+        numberTextView.validateOnInputChange(true)
+        numberTextView.validationHandler = {[weak self] result in
+            if self?.numberTextView.text?.isEmpty ?? true {
+//                self?.statusCardLabel.text = nil
+            }else{
+               // var statusString = (result.status == .success ? "✅" : "❌")
+                if let type = result.value as? PaymentCardType{
+//                    statusString = type.rawValue + " " + statusString
+                    self?.logoCard.image = UIImage(named: "\(type.rawValue).png)")
+                    
+                }
+//                self?.statusCardLabel.text = statusString
+            }
+           // self?.statusCardLabel.isHidden =
+//            self?.statusCardLabel.text?.isEmpty ?? true
+            self?.numberButton.isEnabled = result.status == .success
+        }
+        
 //        numberTextView.delegate = self
 //        numberTextView.addTarget(self, action: #selector(actButton), for: .editingChanged)
-
-        
-        
+    
     }
     
 
